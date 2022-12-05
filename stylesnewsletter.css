@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: url(./img/modern-abstract-background-with-white-fractal-horizon_476363-6124.webp);
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(11,0,190);
+    background: linear-gradient(90deg, rgba(11,0,190,1) 21%, rgba(0,146,255,1) 52%, rgba(248,248,253,1) 90%);
+    border-bottom: 2px solid white;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav{
+    width: 50%;
+    word-spacing: 90px;
+}
+
+header h1{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'Cinzel', serif;
+    border-bottom: 2px solid white;
+}
+
+header nav a:hover{
+    background-color: #0041a8;
+    color: white;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+main{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px black;
+    height: 90vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.parte1{
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 63% 89%, 27% 74%, 0 85%);
+    background-color: rgb(143, 178, 255);
+    height: 50%;
+    padding: 40px;
+}
+
+.parte1 h4{
+    font-family: 'Zen Dots', cursive;
+    font-size: 25px;
+}
+
+.parte1 h4:last-child{
+    padding-top: 20px;
+    color: white;
+}
+
+.parte2{
+    height: 50%;
+}
+
+
+.titulo h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width:900px;
+    margin: auto;
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tabla{
+    width: 33%;
+    height: 350px;
+    margin: auto;
+    border:1px solid #343759;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px  #343759;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #343759;
+}
+
+.boton{
+    display:inline-block;
+    width: 150px;
+    padding:12px;
+    background: #59f0f0;
+    text-decoration: none;
+    color: #343759;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover:first-child{
+    background: #D84924;
+    color: #f1f1f2;
+    transition: .5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.tabla:hover:nth-child(2){
+    background: #EAD41C;
+    color: #f1f1f2;
+    transition: .5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.tabla:hover:last-child{
+    background: #2071F2;
+    color: #f1f1f2;
+    transition: .5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+@media (max-width: 890px){
+    header h1{
+        display: none;
+    }
+
+    header nav a{
+        border: none;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    main{
+        height: 101vh;
+        align-items: center;
+        text-align: center;
+    }
+
+    .parte1{
+        height: 101vh;
+        clip-path: none;
+        background-color: rgb(143, 178, 255);
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        padding-top: 600px;
+    }
+
+    .contenedor .tabla{
+        width: 400px;
+        align-self: center;
+        text-align: center;
+    } 
+}
